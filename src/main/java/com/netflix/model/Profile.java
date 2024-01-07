@@ -1,5 +1,6 @@
 package com.netflix.model;
 
+import com.netflix.model.constants.ProfileType;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
