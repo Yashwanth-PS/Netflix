@@ -17,9 +17,9 @@ public class Video {
     private String title;
     private String description;
 
-    @OneToMany(mappedBy = "profile", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "video", cascade = CascadeType.ALL)
     private List<ProfileWatchList> profileWatchList;
 
     @ManyToMany
-    private List<Actor> actor;
+    private List<Actor> actors;
 }

@@ -25,5 +25,5 @@ public class Profile {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private ProfileType type;
+    private ProfileType profileType;
 }
