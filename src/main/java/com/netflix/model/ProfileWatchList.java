@@ -1,5 +1,6 @@
 package com.netflix.model;
 
+import com.netflix.model.constants.VideoStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
