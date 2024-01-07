@@ -13,5 +13,5 @@ public class Actor {
     private String name;
 
     @ManyToMany
-    private List<Video> videos; // Assuming videoId is a Long
+    private List<Video> videos;
 }

@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -16,6 +18,9 @@ public class Profile {
     @ManyToOne
     @JoinColumn(name = "userId")
     private User user;
+
+    @OneToMany(mappedBy = "profile", cascade = CascadeType.ALL)
+    private List<ProfileWatchList> profileWatchList;
 
     private String name;
 
